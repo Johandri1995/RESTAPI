@@ -64,7 +64,7 @@ public class Servicios {
 	
 	@PostMapping("actualizar")
 	public Map<String, Object> actualizar(@RequestParam("id") String id, 
-							  @RequestParam("pwd") String pwd, 
+							  @RequestParam("password") String pwd, 
 							  @RequestParam("nombre") String nombre, 
 							  @RequestParam("apellido") String apellido,
 							  @RequestParam("identificacion") String identificacion	,
