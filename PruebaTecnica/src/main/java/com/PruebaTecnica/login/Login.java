@@ -29,7 +29,7 @@ public class Login  {
 	@RequestMapping("/")
 	public String index()  {
 		
-		return "Api Rest /login /registro /consultar /actualizar";
+		return "Api Rest con autentiacion mediant token servicios  POST : /login /registro /consultar /actualizar";
 		
 	}
 	
@@ -69,7 +69,7 @@ public class Login  {
 	
 	@PostMapping("registro")
 	public Map<String, Object> registro(@RequestParam("username") String username, 
-							  @RequestParam("pwd") String pwd, 
+							  @RequestParam("password") String pwd, 
 							  @RequestParam("nombre") String nombre, 
 							  @RequestParam("apellido") String apellido,
 							  @RequestParam("identificacion") String identificacion	,
